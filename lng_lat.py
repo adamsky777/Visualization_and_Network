@@ -25,7 +25,7 @@ def get_coordinates(city):
 df['latitude'], df['longitude'] = zip(*df['City'].apply(get_coordinates))
 
 # Save dataframe to CSV file
-df.to_csv('UPDATED.sv', index=False)
+df.to_csv('UPDATED.csv', index=False)
 
 prGreen(str("Done! csv saved"))
 
